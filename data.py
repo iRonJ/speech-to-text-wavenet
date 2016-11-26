@@ -62,13 +62,8 @@ class VCTK(object):
     def _load_corpus(self, data_path):
 
         # read meta-info
-<<<<<<< HEAD
 	print(data_path)
         df = pd.read_table(data_path + 'speaker-info.txt', usecols=['ID', 'AGE', 'GENDER', 'ACCENTS','REGION'],index_col=False, delim_whitespace=True)
-=======
-        df = pd.read_table(data_path + 'speaker-info.txt', usecols=['ID', 'AGE', 'GENDER', 'ACCENTS'],
-                           index_col=False, delim_whitespace=True)
->>>>>>> ada7880eafa7dfa06eba859aa683511221d65e2b
 
         # make file ID
         file_ids = []
@@ -81,18 +76,12 @@ class VCTK(object):
         # exclude extremely short wave files
         file_id, wav_file = [], []
         for i, w in zip(file_ids, wav_files):
-<<<<<<< HEAD
             try:
             	if os.stat(w).st_size > 240000:  # at least 5 seconds
                 	file_id.append(i)
                 	wav_file.append(w)
             except OSError:
 		print('file not found: '+w )
-=======
-            if os.stat(w).st_size > 240000:  # at least 5 seconds
-                file_id.append(i)
-                wav_file.append(w)
->>>>>>> ada7880eafa7dfa06eba859aa683511221d65e2b
 
         # read label sentence
         sents = []
