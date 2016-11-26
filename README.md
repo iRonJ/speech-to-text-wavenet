@@ -30,6 +30,7 @@ The final architecture is shown in the following figure.
 1. [librosa](https://github.com/librosa/librosa) >= 0.4.3
 1. [tensorflow](https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html#pip-installation) >= 0.11
 1. Python libs: tqdm funcsigs pbr
+1. FFMPEG
 
 ## Dataset
 
