@@ -24,10 +24,12 @@ The final architecture is shown in the following figure.
 
 ## Dependencies
 
-1. [tensorflow](https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html#pip-installation) >= 0.11
+
 1. [sugartensor](https://github.com/buriburisuri/sugartensor) >= 0.0.1.9
 1. [pandas](http://pandas.pydata.org/pandas-docs/stable/install.html) >= 0.19.1
 1. [librosa](https://github.com/librosa/librosa) >= 0.4.3
+1. [tensorflow](https://www.tensorflow.org/versions/r0.11/get_started/os_setup.html#pip-installation) >= 0.11
+1. Python libs: tqdm funcsigs pbr
 
 ## Dataset
 
@@ -76,6 +78,8 @@ As mentioned earlier, there is no language model, so there are some cases where 
 
 You can transform a speech wave file to English text with the pre-trained model on the VCTK corpus. 
 Extract [the following zip file](https://drive.google.com/open?id=0B3ILZKxzcrUyVWwtT25FemZEZ1k) to the 'asset/train/ckpt/' directory.
+
+Note: Must have downloaded the VCTK corpus first
 
 ## Other resources
 
