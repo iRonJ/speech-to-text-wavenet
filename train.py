@@ -14,7 +14,11 @@ tf.sg_verbosity(10)
 # hyper parameters
 #
 
+<<<<<<< HEAD
 batch_size = 4    # batch size
+=======
+batch_size = 16    # batch size
+>>>>>>> ada7880eafa7dfa06eba859aa683511221d65e2b
 num_blocks = 3     # dilated blocks
 num_dim = 128      # latent dimension
 
