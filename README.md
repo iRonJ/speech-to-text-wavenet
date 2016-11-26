@@ -35,6 +35,8 @@ The final architecture is shown in the following figure.
 
 We used only 36,395 sentences in the VCTK corpus with a length of more than 5 seconds to prevent CTC loss errors. VCTK corpus can be downloaded from [http://homepages.inf.ed.ac.uk/jyamagis/release/VCTK-Corpus.tar.gz](http://homepages.inf.ed.ac.uk/jyamagis/release/VCTK-Corpus.tar.gz). After downloading, extract the 'VCTK-Corpus.tar.gz' file to the 'asset/data/' directory.
 
+Note: Corpus size is 10GB
+
 ## Training the network
 
 Execute
